@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Perfiles de Aluminio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Perfiles de Aluminio</h1>
+        <input type="text" id="buscador" onkeyup="buscarProducto()" placeholder="Buscar perfil...">
+    </header>
+
+    <section class="catalogo" id="catalogo">
+        <!-- Sección Serie 1400 -->
+        <div class="seccion" id="serie1400">
+            <h2>Serie 1400</h2>
+            <div class="producto" data-nombre="Pilastra lisa ventana">
+                <img src="images/1400.png" alt="Perfil 1400">
+                <h3>Pilastra lisa ventana</h3>
+                <p>Descripción del perfil 1400, ideal para...</p>
+                <button onclick="verDetalles('images/1400.png')">Ver Detalles</button>
+            </div>
+
+            <div class="producto" data-nombre="Hoja lisa ventana">
+                <img src="images/1401.png" alt="Perfil 14001">
+                <h3>Hoja lisa ventana</h3>
+                <p>Descripción del perfil 14001, utilizado para...</p>
+                <button onclick="verDetalles('images/1401.png')">Ver Detalles</button>
+            </div>
+        </div>
+
+        <!-- Sección Serie 1500 -->
+        <div class="seccion" id="serie1500">
+            <h2>Serie 1500</h2>
+            <div class="producto" data-nombre="Perfil 1500">
+                <img src="perfil1500.jpg" alt="Perfil 1500">
+                <h3>Perfil 1500</h3>
+                <p>Descripción del perfil 1500, usado en...</p>
+                <button onclick="verDetalles('perfil1500.jpg')">Ver Detalles</button>
+            </div>
+
+            <div class="producto" data-nombre="Perfil 15001">
+                <img src="perfil15001.jpg" alt="Perfil 15001">
+                <h3>Perfil 15001</h3>
+                <p>Descripción del perfil 15001, con aplicaciones para...</p>
+                <button onclick="verDetalles('perfil15001.jpg')">Ver Detalles</button>
+            </div>
+        </div>
+
+        <!-- Sección Serie 1600 -->
+        <div class="seccion" id="serie1600">
+            <h2>Serie 1600</h2>
+            <div class="producto" data-nombre="Perfil 1600">
+                <img src="perfil1600.jpg" alt="Perfil 1600">
+                <h3>Perfil 1600</h3>
+                <p>Descripción del perfil 1600, ideal para estructuras...</p>
+                <button onclick="verDetalles('perfil1600.jpg')">Ver Detalles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para mostrar la imagen ampliada -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <img id="modalImg" class="modal-content">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Perfiles de Aluminio</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
