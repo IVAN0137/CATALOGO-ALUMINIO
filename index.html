@@ -4,71 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Perfiles de Aluminio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Catálogo de Perfiles de Aluminio</h1>
-        <input type="text" id="buscador" onkeyup="buscarProducto()" placeholder="Buscar perfil...">
+        <div class="search-bar">
+            <input type="text" id="buscador" onkeyup="buscarProducto()" placeholder="🔍 Buscar perfil...">
+        </div>
     </header>
 
     <section class="catalogo" id="catalogo">
         <!-- Sección Serie 1400 -->
         <div class="seccion" id="serie1400">
             <h2>Serie 1400</h2>
-            <div class="producto" data-nombre="Pilastra lisa ventana">
-                <img src="images/1400.png" alt="Perfil 1400">
-                <h3>Pilastra lisa ventana</h3>
-                <p>Descripción del perfil 1400, ideal para...</p>
-                <button onclick="verDetalles('images/1400.png')">Ver Detalles</button>
+            <div class="producto" data-nombre="Pilastra lisa ventana 1400">
+                <div class="card">
+                    <img src="images/1400/1400.png" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Pilastra lisa ventana</h3>
+                        <p>Clave: 1400</p>
+                        <button onclick="verDetalles('images/1400/1400.png')">Ver Detalles</button>
+                    </div>
+                </div>
             </div>
-
-            <div class="producto" data-nombre="Hoja lisa ventana">
-                <img src="images/1401.png" alt="Perfil 14001">
-                <h3>Hoja lisa ventana</h3>
-                <p>Descripción del perfil 14001, utilizado para...</p>
-                <button onclick="verDetalles('images/1401.png')">Ver Detalles</button>
+            <div class="producto" data-nombre="Hoja lisa ventana 1401">
+                <div class="card">
+                    <img src="images/1400/1401.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Hoja lisa ventana</h3>
+                        <p>Clave: 1401</p>
+                        <button onclick="verDetalles('images/1400/1401.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Cerco liso ventana 1402">
+                <div class="card">
+                    <img src="images/1400/1402.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Cerco liso ventana</h3>
+                        <p>Clave: 1402</p>
+                        <button onclick="verDetalles('images/1400/1402.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Cerco liso ventana 1402">
+                <div class="card">
+                    <img src="images/1400/1402.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Cerco liso ventana</h3>
+                        <p>Clave: 1402</p>
+                        <button onclick="verDetalles('images/1400/1402.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Cerco liso ventana 1402">
+                <div class="card">
+                    <img src="images/1400/1402.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Cerco liso ventana</h3>
+                        <p>Clave: 1402</p>
+                        <button onclick="verDetalles('images/1400/1402.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Pilastra lisa puerta 1405">
+                <div class="card">
+                    <img src="images/1400/1405.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Pilastra lisa puerta</h3>
+                        <p>Clave: 1405</p>
+                        <button onclick="verDetalles('images/1400/1405.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Pilastra lisa puerta 1405">
+                <div class="card">
+                    <img src="images/1400/1405.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Pilastra lisa puerta</h3>
+                        <p>Clave: 1405</p>
+                        <button onclick="verDetalles('images/1400/1405.png')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div><div class="producto" data-nombre="Pilastra lisa puerta 1406">
+                <div class="card">
+                    <img src="images/1400/1406.png" alt="Hoja lisa ventana ">
+                    <div class="content">
+                        <h3>Hoja lisa puerta</h3>
+                        <p>Clave: 1406</p>
+                        <button onclick="verDetalles('images/1400/1406.png')">Ver Detalles</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Sección Serie 1500 -->
-        <div class="seccion" id="serie1500">
-            <h2>Serie 1500</h2>
-            <div class="producto" data-nombre="Perfil 1500">
-                <img src="perfil1500.jpg" alt="Perfil 1500">
-                <h3>Perfil 1500</h3>
-                <p>Descripción del perfil 1500, usado en...</p>
-                <button onclick="verDetalles('perfil1500.jpg')">Ver Detalles</button>
-            </div>
-
-            <div class="producto" data-nombre="Perfil 15001">
-                <img src="perfil15001.jpg" alt="Perfil 15001">
-                <h3>Perfil 15001</h3>
-                <p>Descripción del perfil 15001, con aplicaciones para...</p>
-                <button onclick="verDetalles('perfil15001.jpg')">Ver Detalles</button>
-            </div>
-        </div>
-
-        <!-- Sección Serie 1600 -->
-        <div class="seccion" id="serie1600">
-            <h2>Serie 1600</h2>
-            <div class="producto" data-nombre="Perfil 1600">
-                <img src="perfil1600.jpg" alt="Perfil 1600">
-                <h3>Perfil 1600</h3>
-                <p>Descripción del perfil 1600, ideal para estructuras...</p>
-                <button onclick="verDetalles('perfil1600.jpg')">Ver Detalles</button>
-            </div>
-        </div>
+        <!-- Repite con más series -->
     </section>
 
-    <!-- Modal para mostrar la imagen ampliada -->
+    <section class="catalogo" id="catalogo">
+        <!-- Sección Serie 1400 -->
+        <div class="seccion" id="serie1400">
+            <h2>Serie 1400</h2>
+            <div class="producto" data-nombre="Perfil 1400">
+                <div class="card">
+                    <img src="perfil1400.jpg" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Perfil 1400</h3>
+                        <p>Descripción del perfil 1400, ideal para...</p>
+                        <button onclick="verDetalles('perfil1400.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div><div class="producto" data-nombre="Perfil 1400">
+                <div class="card">
+                    <img src="perfil1400.jpg" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Perfil 1400</h3>
+                        <p>Descripción del perfil 1400, ideal para...</p>
+                        <button onclick="verDetalles('perfil1400.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div><div class="producto" data-nombre="Perfil 1400">
+                <div class="card">
+                    <img src="perfil1400.jpg" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Perfil 1400</h3>
+                        <p>Descripción del perfil 1400, ideal para...</p>
+                        <button onclick="verDetalles('perfil1400.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div><div class="producto" data-nombre="Perfil 1400">
+                <div class="card">
+                    <img src="perfil1400.jpg" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Perfil 1400</h3>
+                        <p>Descripción del perfil 1400, ideal para...</p>
+                        <button onclick="verDetalles('perfil1400.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div><div class="producto" data-nombre="Perfil 1400">
+                <div class="card">
+                    <img src="perfil1400.jpg" alt="Perfil 1400">
+                    <div class="content">
+                        <h3>Perfil 1400</h3>
+                        <p>Descripción del perfil 1400, ideal para...</p>
+                        <button onclick="verDetalles('perfil1400.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            <div class="producto" data-nombre="Perfil 14001">
+                <div class="card">
+                    <img src="perfil14001.jpg" alt="Perfil 14001">
+                    <div class="content">
+                        <h3>Perfil 14001</h3>
+                        <p>Descripción del perfil 14001, utilizado para...</p>
+                        <button onclick="verDetalles('perfil14001.jpg')">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Repite con más series -->
+    </section>
+
+    <!-- Modal para ver detalles -->
     <div id="modal" class="modal">
         <span class="close" onclick="cerrarModal()">&times;</span>
         <img id="modalImg" class="modal-content">
     </div>
 
     <footer>
-        <p>&copy; 2024 Catálogo de Perfiles de Aluminio</p>
+        <p>&copy; 2024 Catálogo de Perfiles de Aluminio | Diseño profesional</p>
     </footer>
 
     <script src="scripts.js"></script>
